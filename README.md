@@ -1,6 +1,6 @@
 # CS659A_Adaptive_Traffic_Control
 
-CS659A Project : Adaptive Traffic Control
+CS659A Project : Adaptive Traffic Control using SUMO
 
 Our project focuses on implementing a learning algorithm (DQN) that will allow traffic control devices to study traffic patterns or behaviors for a given intersection and optimize traffic flow by timely change of phases.
 
