@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Monday 19 April 2021 04:51:54 AM IST by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="intersection.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="intersection.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="/home/mabir/Workspace/IITK_Courses/Sem-IV/CS659A/project/intersection_simulator/straight_routes_2.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="edge_LR_1 edge_LR_2" color="yellow" id="route_0"/>
+    <route edges="edge_RL_1 edge_RL_2" color="yellow" id="route_1"/>
+    <route edges="edge_NS_1 edge_NS_2" color="yellow" id="route_2"/>
+    <route edges="edge_SN_1 edge_SN_2" color="yellow" id="route_3"/>
+    <flow id="flow_LR" begin="0.00" route="route_0" end="86400" vehsPerHour="500"/>
+    <flow id="flow_RL" begin="0.00" route="route_1" end="86400" vehsPerHour="500"/>
+    <flow id="flow_NS" begin="0.00" route="route_2" end="86400" vehsPerHour="1200"/>
+    <flow id="flow_SN" begin="0.00" route="route_3" end="86400" vehsPerHour="1200"/>
+</routes>
